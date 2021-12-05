@@ -1,5 +1,5 @@
 require('./bootstrap');
 
 $(function() {
-  alert('Hello!');
+  console.log('hi');
 });
