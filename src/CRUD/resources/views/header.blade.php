@@ -18,7 +18,7 @@
     </div>
     <ul class="navbar-nav">
       <!-- Avatar -->
-      
+      {{-- 認証を使う際、アバターに関してはログインしていない時は時はアバターは表示されず、登録画面に遷移する記述を追加 --}}
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink" role="button"
           data-mdb-toggle="dropdown" aria-expanded="false">
@@ -28,9 +28,6 @@
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <li>
             <a class="dropdown-item" href="#">My profile</a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">Settings</a>
           </li>
           <li>
             <a class="dropdown-item" href="#">Logout</a>
