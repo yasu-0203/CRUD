@@ -43,6 +43,9 @@
         </ul>
       </li>
       @endauth
+      @guest
+        {{-- ここにほしい --}}
+      @endguest
     </ul>
   </nav>
   <!-- Navbar -->
