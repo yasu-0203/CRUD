@@ -43,29 +43,7 @@
       </li>
       @endauth
       @guest
-         <!-- <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink" role="button"
-          data-mdb-toggle="dropdown" aria-expanded="false">
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle" height="48"
-            alt="Portrait of a Woman" loading="lazy" />
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li>
-            <a class="dropdown-item" href="{{ route('register') }}">register</a>
-          </li>
-          <li>
-            {{-- onclickの後はスクリプト文なのでここの処理をresources/js/app.jsに移行し、Jqueryの記述にする必要がある --}}
-            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();">
-              {{ __('Logout') }}
-            </a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-              @csrf
-            </form>
-          </li>
-        </ul>
-      </li> -->
-      <a href="{{ route('register') }}">会員登録</a>
+      <a class="nav-link" href="{{ route('register') }}">register</a>
       @endguest
     </ul>
   </nav>
