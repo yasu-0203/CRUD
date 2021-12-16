@@ -37271,8 +37271,17 @@ module.exports = function(module) {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 $(function () {
-  console.log('hi');
+  $('.logout').on('click', function (e) {
+    e.preventDefault();
+    $('#logout-form').submit();
+  });
 });
+/*
+$('.logout').on('click', submit(function(e) {
+    e.preventDefault();
+    $('#logout-form');
+    )
+  }); */
 
 /***/ }),
 
@@ -37339,8 +37348,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/html/CRUD/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/html/CRUD/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/html/crud/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/html/crud/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
