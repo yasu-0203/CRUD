@@ -28,7 +28,7 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <li>
-            <a class="dropdown-item" href="#">My profile</a>
+            <a class="dropdown-item" href="{{ route('userprofile') }}">My profile</a>
           </li>
           <li>
             {{-- onclickの後はスクリプト文なのでここの処理をresources/js/app.jsに移行し、Jqueryの記述にする必要がある --}}

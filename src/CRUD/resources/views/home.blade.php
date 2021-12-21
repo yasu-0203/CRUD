@@ -36,8 +36,8 @@
                         <a href="#">
                             <i class="fas fa-pen-alt fa-3x" style="color: #f0fe2f"></i>
                         </a>
-                        {{-- ユーザー編集画面へ --}}
-                        <a href="#">
+                        {{-- ユーザー詳細画面へ --}}
+                        <a href="{{ route('userprofile') }}">
                             <i class="fas fa-user-alt fa-3x" style="color: #fe2f2f"></i>
                         </a>
                     </div>
