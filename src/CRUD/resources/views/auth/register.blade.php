@@ -24,7 +24,7 @@
                     <label class="form-label" for="form1Example2">Password</label>
                 </div>
                 <div class="form-outline mb-4 col-8 mx-auto">
-                    <input type="password-confirm" class="form-control" name="password_confirmation"
+                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
                         autocomplete="new-password" />
                     <label class="form-label" for="form1Example2">Confirm
                         Password</label>
@@ -32,7 +32,7 @@
                 <p class="card-text">
                     登録済みの方は
                     <a href="{{ route('login') }}">こちら<a>
-                    から
+                            から
                 </p>
                 {{-- Registerボタン --}}
                 <button type="submit" class="btn btn-outline-primary btn-rounded mb-4 " data-mdb-ripple-color="#000000">
