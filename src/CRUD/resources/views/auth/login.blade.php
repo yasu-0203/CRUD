@@ -83,15 +83,7 @@
             <form method="POST" action="{{ route('login') }}">
                 @csrf
                 <h4 class="card-title">Login</h4>
-                {{-- error Message --}}
-                <div class="card  text-white mb-4 col-8 mx-auto" style="background-color:#fda5b2;">
-                    <div class="card-body">
-                        <p class="card-text">
-                            sample sample sample sample sample sample sample sample sample sample sample sample sample
-                        </p>
-                    </div>
-                </div>
-                {{-- error Message --}}
+                @include('auth.error_card')
                 <!-- Email入力-->
                 <div class="form-outline mb-4 col-8 mx-auto">
                     <input type="email" class="form-control" name="email" value="{{ old('email') }}" />
@@ -102,6 +94,11 @@
                     <input type="password" class="form-control" name="password" />
                     <label class="form-label" for="form1Example2">Password</label>
                 </div>
+                <p class="card-text">
+                    登録をしていない方は
+                    <a href="{{ route('register') }}">こちら<a>
+                    から
+                </p>
                 {{-- loginボタン --}}
                 <button type="submit" class="btn btn-outline-primary btn-rounded mb-4 " data-mdb-ripple-color="#000000">
                     Login
