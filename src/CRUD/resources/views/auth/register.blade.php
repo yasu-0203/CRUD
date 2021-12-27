@@ -9,11 +9,12 @@
                 @csrf
                 <h4 class="card-title">Register</h4>
                 @include('auth.error_card')
-                <!-- Email入力-->
+                <!-- name入力-->
                 <div class="form-outline mb-4 col-8 mx-auto">
                     <input type="name" class="form-control" name="name" value="{{ old('name') }}" />
                     <label class="form-label" for="form1Example1">Your Name</label>
                 </div>
+                <!-- Email入力-->
                 <div class="form-outline mb-4 col-8 mx-auto">
                     <input type="email" class="form-control" name="email" value="{{ old('email') }}" />
                     <label class="form-label" for="form1Example1">Email address</label>
