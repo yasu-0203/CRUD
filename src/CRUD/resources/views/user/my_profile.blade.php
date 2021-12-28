@@ -26,17 +26,18 @@
                   <label class="form-label" for="form1Example1">Email address</label>
                 </div>
                 {{-- passwordのアップデート処理も一応ここで行えるようにしたい --}}
-
-                {{-- <div class="form-outline mb-4 col-8 mx-auto">
+                <h3>Password</h3>
+                <div class="form-outline mb-4">
                   <input type="password" class="form-control" name="password" autocomplete="new-password" />
                   <label class="form-label" for="form1Example2">Password</label>
                 </div>
-                <div class="form-outline mb-4 col-8 mx-auto">
+                <h3>Confirm Password</h3>
+                <div class="form-outline mb-4">
                   <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
                     autocomplete="new-password" />
                   <label class="form-label" for="form1Example2">Confirm
                     Password</label>
-                </div> --}}
+                </div>
               </div>
             </div>
             <button type="submit" class="btn btn-outline-primary btn-rounded mb-4" data-mdb-ripple-color="#000000">
