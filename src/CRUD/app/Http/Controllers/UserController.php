@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
@@ -22,15 +23,16 @@ class UserController extends Controller
     public function show()
     {
         $user = $this->user->find(Auth::id());
-        // ddd($user);
         return view('user.my_profile', compact('user'));
     }
 
     public function update(Request $request)
     {
+        
         $inputs = $request->all();
         $user = $this->user->find(Auth::id());
         $user->fill($inputs);
+        $user->password = Hash::make($request['password']);
         $user->save();
         return redirect()->route('home');
     }
