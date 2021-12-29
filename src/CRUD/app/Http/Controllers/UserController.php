@@ -28,7 +28,6 @@ class UserController extends Controller
 
     public function update(Request $request)
     {
-        
         $inputs = $request->all();
         $user = $this->user->find(Auth::id());
         $user->fill($inputs);
