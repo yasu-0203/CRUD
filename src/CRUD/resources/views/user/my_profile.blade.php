@@ -17,24 +17,24 @@
               <div class="col-9">
                 <h3>Your Name</h3>
                 <div class="form-outline mb-4">
-                  <input type="name" class="form-control" name="name" value="{{ $user->name }}" />
+                  <input type="name" class="form-control" name="name" value="{{ $user->name }}" required/>
                   <label class="form-label" for="form1Example1">Your Name</label>
                 </div>
                 <h3>Email</h3>
                 <div class="form-outline mb-4">
-                  <input type="email" class="form-control" name="email" value="{{ $user->email }}" />
+                  <input type="email" class="form-control" name="email" value="{{ $user->email }}" required/>
                   <label class="form-label" for="form1Example1">Email address</label>
                 </div>
                 {{-- passwordのアップデート処理も一応ここで行えるようにしたい --}}
                 <h3>Password</h3>
                 <div class="form-outline mb-4">
-                  <input type="password" class="form-control" name="password" autocomplete="new-password" />
+                  <input type="password" class="form-control" name="password" autocomplete="new-password" required/>
                   <label class="form-label" for="form1Example2">Password</label>
                 </div>
                 <h3>Confirm Password</h3>
                 <div class="form-outline mb-4">
                   <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
-                    autocomplete="new-password" />
+                    autocomplete="new-password" required/>
                   <label class="form-label" for="form1Example2">Confirm
                     Password</label>
                 </div>
