@@ -83,7 +83,9 @@
             <form method="POST" action="{{ route('login') }}">
                 @csrf
                 <h4 class="card-title">Login</h4>
+                @if ($errors->any())
                 @include('auth.error_card')
+                @endif
                 <!-- Email入力-->
                 <div class="form-outline mb-4 col-8 mx-auto">
                     <input type="email" class="form-control" name="email" value="{{ old('email') }}" />
@@ -97,7 +99,7 @@
                 <p class="card-text">
                     登録をしていない方は
                     <a href="{{ route('register') }}">こちら<a>
-                    から
+                            から
                 </p>
                 {{-- loginボタン --}}
                 <button type="submit" class="btn btn-outline-primary btn-rounded mb-4 " data-mdb-ripple-color="#000000">

@@ -18,7 +18,7 @@ class UserController extends Controller
         // $this->middleware('auth');が先な理由は上から順に処理されるため認証していなくても$this->user = $user;を通ってしまうから
         $this->user = $user;
     }
-    
+
 
     public function show()
     {
@@ -35,6 +35,4 @@ class UserController extends Controller
         $user->save();
         return redirect()->route('home');
     }
-
-
 }
