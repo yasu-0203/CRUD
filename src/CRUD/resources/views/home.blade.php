@@ -25,7 +25,7 @@
                     </p>
                     <div class="card-icon d-flex justify-content-evenly">
                         {{-- カレンダー一覧 --}}
-                        <a href="#">
+                        <a href="{{ route('showCalendar') }}">
                             <i class="far fa-calendar-alt fa-3x" style="color: #7ee845"></i>
                         </a>
                         {{-- 1日ずつの予定 --}}
