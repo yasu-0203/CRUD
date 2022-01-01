@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class EventController extends Controller
+class CalendarController extends Controller
 {
     public function __construct()
     {
@@ -13,6 +13,6 @@ class EventController extends Controller
 
     public function index()
     {
-        return view('event.add_events');
+        return view('calendar.index');
     }
 }
